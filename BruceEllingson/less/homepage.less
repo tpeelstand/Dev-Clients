@@ -1,0 +1,68 @@
+//Fonts 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Variables
+
+@black: #000;
+@white: #FFF;
+@new: #F00;
+//Defaults
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Buttons
+.btn {
+    border-radius: 0 !important;
+}
+.btn-nav {
+    background: @black;
+    color: @white;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        color: darken(@white, 15%);
+        text-decoration: none;
+    }
+}
+
+// Image Adjustments
+.image-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-container {
+    padding-left: 10px !important;
+    padding-right: 10px  !important;
+}
+.img-responsive {
+   
+    @media (min-width: 0) and (max-width: 1199px) {
+        padding-bottom: 20px; 
+    }      
+}
+
+// Image Floats
+.fl-left-img {
+    float: left;
+    display: inline;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.fl-right-img {
+    float: right;
+    display: inline;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+// Additional Styles
+.content-box {
+    margin-bottom: 20px;
+}
+.new {
+    color: @new;
+}

@@ -1,0 +1,226 @@
+/* GOOGLE FONTS */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=News+Cycle);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+html
+
+body
+  font-family 'Noto Sans', sans-serif
+  margin 0
+  background url(../images/goose.jpg) no-repeat center center fixed
+  -webkit-background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  background-size cover
+
+@media screen and (min-width: 780px)
+  html
+    min-height 100%
+    position relative
+  body
+    height 100%
+  a
+    text-decoration none
+  #cloud-container
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    overflow-x hidden
+    overflow-y auto
+    width 18em
+    border-right 1px solid #333
+    background rgba(0, 0, 0, .8)
+  .full-logo
+    color darkgoldenrod
+    text-align center
+    padding 0 0 20px 0
+    width 100%
+    font-family 'Montserrat', sans-serif
+    text-shadow 0 0 5px #000
+    border-bottom 1px solid #333
+    .main-logo
+      letter-spacing -16px
+      margin-left -16px
+      font-size 5em
+      display block
+    .sub-logo
+      font-size 1.2em
+      display block
+      margin-top -10px
+  .accordion
+    width 380px
+    margin 10px auto
+    h1
+      padding 0 20px 0 15px
+      background-color none
+      font-family Lobster
+      font-size 1.5rem
+      font-weight normal
+      color darkgoldenrod
+      &:hover
+        color goldenrod
+    h2
+      padding 1px 25px
+      font-size 1rem
+      text-decoration none
+      font-weight normal
+      &:hover
+        background-color rgba(5, 150, 140, 1)
+    h3
+      padding 5px 30px
+      background-color #b94152
+      font-size .9rem
+      color #ddd
+      &:hover
+        background-color #a93142
+    h4
+      padding 5px 35px
+      background-color #ffc25a
+      font-size .9rem
+      color #af720a
+      &:hover
+        background-color #e0b040
+    p
+      padding 15px 35px
+      background-color #ddd
+      font-family "Georgia"
+      font-size .8rem
+      color #333
+      line-height 1.3rem
+    .opened-for-codepen
+      display block
+  .national-parks
+    a
+      margin 0
+      padding 0
+      font-size 1em
+      color #FFF
+      font-weight normal
+      &:hover
+        color #FFF
+        font-weight bold
+  .mobile-nav
+    display none
+  .mobile
+    display none
+
+::-webkit-scrollbar
+    width 12px
+    height 12px
+
+::-webkit-scrollbar-track
+    background rgba(0, 0, 0, 0.1)
+
+::-webkit-scrollbar-thumb
+    background rgba(0, 0, 0, 0.5)
+    height 25%
+    border-radius 10px
+
+  .accordion h1, h2, h3, h4
+    cursor pointer
+    
+
+  .accordion h2, h3, h4
+  font-family "News Cycle"
+
+  
+ .accordion div, .accordion p
+  display none
+
+@media screen and (max-width: 779px)
+  #cloud-container
+    display none
+  .accordion
+    display none
+  .mobile-nav
+    display block
+  .mobile
+    width 100%
+    background #1d1f20
+    height 50px
+    line-height 50px
+  .hamburger
+    background none
+    position absolute
+    top 0
+    right 0
+    line-height 45px
+    padding 0px 15px 0px 15px
+    color darkgoldenrod
+    border 0
+    font-size 1.25em
+    font-weight bold
+    cursor pointer
+    outline none
+    z-index 10000000000000
+  .menu-text
+    font-size 14px
+    position absolute
+    top 0
+    right 40px
+  .cross
+    background none
+    position absolute
+    top 7px
+    right 0
+    padding 0px 15px 0px 15px
+    color darkgoldenrod
+    border 0
+    font-size 3em
+    line-height 45px
+    font-weight bold
+    cursor pointer
+    outline none
+    z-index 10000000000000
+  .close-text
+    font-size 14px
+    position absolute
+    top -7px
+    right 40px
+  .menu
+    z-index 1000000
+    font-weight bold
+    font-size 0.8em
+    width 100%
+    background #131313
+    position absolute
+    text-align center
+    ul
+      margin 0
+      padding 0
+      list-style-type none
+      list-style-image none
+      li
+        a
+          text-decoration none
+          margin 0px
+          color #fff
+          &:hover
+            color #fff
+            text-decoration none
+    li
+      display block
+      padding 15px 0 15px 0
+      border-bottom #1d1f20 1px solid
+      &:hover
+        display block
+        background #181818
+        padding 15px 0 15px 0
+        border-bottom #1d1f20 1px solid
+    a
+      text-decoration none
+      color white
+      &:hover
+        text-decoration none
+        color white
+  .glyphicon-home
+    color white
+    font-size 1.5em
+    margin-top 5px
+    margin 0 auto
+
